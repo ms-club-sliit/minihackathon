@@ -60,16 +60,20 @@
 
     <link rel="stylesheet" href="assets/css/prod.gs.css" media="all" />
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!-- MODERNIZER CSS  -->
     <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
 
     <script>
+       
         var remove_und = function(par){
 
             par.style.textDecoration = 'none';
 
         };
     </script>
+
 </head>
 
 <body class="home">
@@ -143,14 +147,14 @@
 
         <!--BANNER-->
         <section>
-            <div class="lgx-banner" style="margin-top: -9%;">
+            <div class="lgx-banner" style="margin-top: -4%;">
                 <div class="lgx-banner-style">
                     <div class="lgx-inner lgx-inner-fixed">
                         <div class="container">
                             <div class="row">
                                 <div class="col-xs-12">
                                     <div class="lgx-banner-info-area">
-                                        <div class="lgx-banner-info-circle">
+                                        <div data-aos="fade-right" data-aos-duration="1550" class="lgx-banner-info-circle">
                                             <div class="info-circle-inner">
                                                 <h3 class="date">
                                                     <b>16</b> <span>Aprill</span>
@@ -162,16 +166,19 @@
                                             </div>
                                         </div>
 
-                                        <div class="lgx-banner-info">
+                                        <div  class="lgx-banner-info">
                                             <!--lgx-banner-info-center lgx-banner-info-black lgx-banner-info-big lgx-banner-info-bg-->
                                             <!--banner-info-margin-->
-                                            <b style="font-family: Snell Roundhand, cursive; font-size:50pt;">{ Mini }</b>
-                                            <h3 class="title">
+                                            <div data-aos="fade-down" data-aos-duration="3000" >
+                                                <b  style="font-family: Snell Roundhand, cursive; font-size:50pt;">{ Mini }</b>
+                                            </div>
+                                           
+                                            <h3 data-aos="fade-left" data-aos-duration="2550" class="title">
                                                 <span> <b>Hackathon</b><b> 4.0</b></span>
                                                 <!--span><b>2</b><b>0</b><b>2</b><b>1</b></span-->
                                             </h3>
                                             <!--h6 class="subtitle">#MsClubofSLIIT</h6-->
-                                            <a id="participate" class="lgx-btn lgx-btn-red" onmouseover="remove_und(this)" style="color: white;" href="#"><span>Join the Awarness
+                                            <a data-aos="fade-up-left" data-aos-duration="1650" id="participate" class="lgx-btn lgx-btn-red" onmouseover="remove_und(this)" style="color: white;" href="#"><span>Join the Awarness
                                                     Session</span></a>
 
                                             <!--h3 class="location"><i class="fa fa-map-marker"></i> Online</h3-->
@@ -201,7 +208,7 @@
                             </div-->
 
                             <div class="lgx-heading" style="text-align: center;">
-                                <h2 class="heading" style="color: azure;">Who can participate ?</h2>
+                                <h2 class="heading"data-aos="fade-down" data-aos-duration="1000"style="color: azure;">Who can participate ?</h2>
                                 <h3 class="subheading">
                                     Do not miss the upcoming event, Who should attend?
                                 </h3>
@@ -232,13 +239,13 @@
                    
                 </div>
 
-                        <vertical-timeline-block id="lgx-schedule">
+                        <vertical-timeline-block id="lgx-schedule" >
                             <div class="vertical-timeline" ng-transclude="">
                                 <div  class="lgx-heading" style="text-align: center">
-                           <h2  class="heading" style="padding-top: 5%;">Timeline</h2></div>
-                            <div  class="vertical-timeline__block layout-row current compact">
+                           <h2 data-aos="zoom-in" data-aos-duration="1000"  class="heading" style="padding-top: 5%;">Timeline</h2></div>
+                            <div   class="vertical-timeline__block layout-row current compact">
                                 <div  class="vertical-timeline__block-column flex-45" flex="45" transclude-id="col-left">
-                                    <div aria-hidden="true" transclude-to="col-left">
+                                    <div data-aos="fade-right"  data-aos-duration="1000" aria-hidden="true" transclude-to="col-left">
                                         <h2 class="vertical-timeline__block-title">
                                             Awarness Session
                                         </h2>
@@ -251,7 +258,7 @@
                                     </div>
                                 </div>
                                 
-                                <div layout="column" layout-align="start center" flex=""
+                                <div data-aos="zoom-in" data-aos-duration="1000" layout="column" layout-align="start center" flex=""
                                     class="layout-align-start-center layout-column flex">
                                     <div class="vertical-timeline__dot"></div>
                                     <!---->
@@ -261,7 +268,7 @@
                                 <div class="vertical-timeline__block-column flex-45" flex="45"
                                     transclude-id="col-right">
                                     <div aria-hidden="true" transclude-to="col-right">
-                                        <div class="vertical-timeline__block-right-text">
+                                        <div data-aos="fade-left"  data-aos-duration="1000" class="vertical-timeline__block-right-text">
                                             Students can register and submit their applications to
                                             mentor organizations.
                                         </div>
@@ -275,7 +282,7 @@
                         <vertical-timeline-block>
                             <div class="vertical-timeline__block layout-row current compact">
                                 <div class="vertical-timeline__block-column flex-45" flex="45" transclude-id="col-left">
-                                    <div aria-hidden="true" transclude-to="col-left">
+                                    <div data-aos="fade-right"  data-aos-duration="1000" aria-hidden="true" transclude-to="col-left">
                                         <h2 class="vertical-timeline__block-title">
                                             Registration Opens
                                         </h2>
@@ -287,7 +294,7 @@
                                     </div>
                                 </div>
                                 
-                                <div layout="column" layout-align="start center" flex=""
+                                <div data-aos="zoom-in" data-aos-duration="1000" layout="column" layout-align="start center" flex=""
                                     class="layout-align-start-center layout-column flex">
                                     <div class="vertical-timeline__dot"></div>
                                     <!---->
@@ -297,7 +304,7 @@
                                 <div class="vertical-timeline__block-column flex-45" flex="45"
                                     transclude-id="col-right">
                                     <div aria-hidden="true" transclude-to="col-right">
-                                        <div class="vertical-timeline__block-right-text">
+                                        <div data-aos="fade-left"  data-aos-duration="1000" class="vertical-timeline__block-right-text">
                                             Students can register and submit their applications to
                                             mentor organizations.
                                         </div>
@@ -311,7 +318,7 @@
                         <vertical-timeline-block>
                             <div class="vertical-timeline__block layout-row current compact">
                                 <div class="vertical-timeline__block-column flex-45" flex="45" transclude-id="col-left">
-                                    <div aria-hidden="true" transclude-to="col-left">
+                                    <div data-aos="fade-right"  data-aos-duration="1000" aria-hidden="true" transclude-to="col-left">
                                         <h2 class="vertical-timeline__block-title">
                                             Announcing Finalists
                                         </h2>
@@ -323,7 +330,7 @@
                                     </div>
                                 </div>
                                 
-                                <div layout="column" layout-align="start center" flex=""
+                                <div data-aos="zoom-in" data-aos-duration="1000" layout="column" layout-align="start center" flex=""
                                     class="layout-align-start-center layout-column flex">
                                     <div class="vertical-timeline__dot"></div>
                                     <!---->
@@ -333,7 +340,7 @@
                                 <div class="vertical-timeline__block-column flex-45" flex="45"
                                     transclude-id="col-right">
                                     <div aria-hidden="true" transclude-to="col-right">
-                                        <div class="vertical-timeline__block-right-text">
+                                        <div data-aos="fade-left"  data-aos-duration="1000" class="vertical-timeline__block-right-text">
                                             Students can register and submit their applications to
                                             mentor organizations.
                                         </div>
@@ -348,7 +355,7 @@
                         <vertical-timeline-block active-from="slot_request_starts">
                             <div class="vertical-timeline__block layout-row future compact last" layout="row" aria-hidden="false">
                                 <div class="vertical-timeline__block-column flex-45" flex="45" transclude-id="col-left">
-                                    <div aria-hidden="true" transclude-to="col-left">
+                                    <div data-aos="fade-right"  data-aos-duration="1000" aria-hidden="true" transclude-to="col-left">
                                         <h2 class="vertical-timeline__block-title">
                                           <b>  Mini-Hackathon Final Round </b>
                                         </h2>
@@ -366,7 +373,7 @@
                                         </div>
                                     </span>
                                 </div>
-                                <div layout="column" layout-align="start center" flex=""
+                                <div data-aos="zoom-in" data-aos-duration="1000" layout="column" layout-align="start center" flex=""
                                     class="layout-align-start-center layout-column flex">
                                     <div class="vertical-timeline__dot"></div>
                                     <!---->
@@ -374,7 +381,7 @@
                                 <div class="vertical-timeline__block-column flex-45" flex="45"
                                     transclude-id="col-right">
                                     <div aria-hidden="true" transclude-to="col-right">
-                                        <div class="vertical-timeline__block-right-text">
+                                        <div data-aos="fade-left"  data-aos-duration="1000" class="vertical-timeline__block-right-text">
                                             Organizations review proposals and select which students
                                             to accept.
                                         </div>
@@ -831,6 +838,11 @@
 
     <!-- CUSTOM SCRIPT  -->
     <script src="assets/js/custom.script.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+         AOS.init();
+    </script>
 </body>
 
 </html>
